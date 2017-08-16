@@ -1,6 +1,7 @@
 # config valid only for current version of Capistrano
 lock "3.9.0"
 
+server '34.213.54.101', user: 'deploy', roles: %w{web app db}
 set :application, "dummyapp"
 set :repo_url, 'git@github.com:amitsharma1586/dummyapp.git'
 
