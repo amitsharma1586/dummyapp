@@ -1,4 +1,5 @@
 # config valid only for current version of Capistrano
+require "capistrano/deploy"
 lock "3.9.0"
 
 server '34.213.54.101', user: 'deploy', roles: %w{web app db}
